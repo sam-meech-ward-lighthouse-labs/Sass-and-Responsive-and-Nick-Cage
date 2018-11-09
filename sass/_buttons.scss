@@ -1,0 +1,15 @@
+
+@mixin button($primaryColor, $secondaryColor) {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: 5px solid $secondaryColor;
+  background-color: $primaryColor;
+}
+
+.good-btn {
+  @include button(olivedrab, green)
+}
+.bad-btn {
+  @include button(firebrick, red)
+}

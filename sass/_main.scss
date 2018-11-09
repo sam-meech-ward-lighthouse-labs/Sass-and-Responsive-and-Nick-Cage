@@ -1,0 +1,31 @@
+body {
+  background-color: $companyDefaultColor;
+}
+
+.content {
+  max-width: $contentWidth;
+  margin: auto;
+}
+
+p {
+  font-size: calc(20px + 1vw);
+  color: $textColor ;
+}
+
+@media (max-width: 400px) {
+  body {
+    background-color: tomato;
+  }
+  .box {
+    width: 100%;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+  body {
+    background-color: crimson;
+  }
+  .box {
+    width: 50%;
+  }
+}

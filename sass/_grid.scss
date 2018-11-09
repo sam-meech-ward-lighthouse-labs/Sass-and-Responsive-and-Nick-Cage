@@ -1,0 +1,27 @@
+.gallery {
+  // gallery styles here
+  padding: 0;
+  width: 25%;
+  height: 400px;
+  &__image {
+    // gallery__iamge styles
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    &--featured {
+      border: 10px solid blue;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+img { @include transform(rotate(30deg)); }

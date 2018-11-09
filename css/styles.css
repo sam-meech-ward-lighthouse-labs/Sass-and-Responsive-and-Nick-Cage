@@ -1,0 +1,56 @@
+body {
+  background-color: cornflowerblue; }
+
+.content {
+  max-width: 900px;
+  margin: auto; }
+
+p {
+  font-size: calc(20px + 1vw);
+  color: floralwhite; }
+
+@media (max-width: 400px) {
+  body {
+    background-color: tomato; }
+
+  .box {
+    width: 100%; } }
+@media (min-width: 401px) and (max-width: 800px) {
+  body {
+    background-color: crimson; }
+
+  .box {
+    width: 50%; } }
+.gallery {
+  padding: 0;
+  width: 25%;
+  height: 400px; }
+  .gallery__image {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+    .gallery__image--featured {
+      border: 10px solid blue; }
+    .gallery__image img {
+      width: 100%; }
+
+img {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg); }
+
+.good-btn {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: 5px solid green;
+  background-color: olivedrab; }
+
+.bad-btn {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: 5px solid red;
+  background-color: firebrick; }
+
+/*# sourceMappingURL=styles.css.map */
